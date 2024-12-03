@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فاتورة الشراء</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="company">
+            <img src="img1.png" alt="Logo" class="logo">
+            <h1>شركة الأطيبان A.M.B لتمور الوادي</h1>
+        </div>
+        <div class="digital-clock" id="clock"></div>
+    </div>
+    <div class="invoice-form">
+        <h2>تسجيل فاتورة شراء</h2>
+        <form id="invoiceForm">
+            <label for="itemName">اسم الصنف:</label>
+            <input type="text" id="itemName" required>
+            
+            <label for="itemType">نوع الصنف:</label>
+            <select id="itemType">
+                <option value="علب">علب</option>
+                <option value="كيلو">كيلو</option>
+            </select>
+            
+            <label for="itemQuantity">كمية الصنف:</label>
+            <input type="number" id="itemQuantity" required>
+            
+            <label for="itemPrice">سعر الصنف الواحد (جنيه):</label>
+            <input type="number" id="itemPrice" required>
+            
+            <button type="button" id="addItem">إضافة الصنف</button>
+        </form>
+        <h3>الإجمالي: <span id="total">0</span> جنيه</h3>
+        <button id="printInvoice">طباعة التقرير</button>
+    </div>
+    <div class="invoice-record">
+        <h2>سجل الفواتير</h2>
+        <table id="invoiceTable">
+            <thead>
+                <tr>
+                    <th>اسم الصنف</th>
+                    <th>نوع الصنف</th>
+                    <th>الكمية</th>
+                    <th>سعر الوحدة</th>
+                    <th>الإجمالي</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

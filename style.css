@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:black;
+    color: yellow;
+    padding: 10px 20px;
+}
+
+.company {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 50px;
+}
+
+.digital-clock {
+    font-size: 18px;
+}
+
+.invoice-form, .invoice-record {
+    margin: 20px;
+    padding: 20px;
+    background: yellow;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px yellow;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: black;
+    color: yellow;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
